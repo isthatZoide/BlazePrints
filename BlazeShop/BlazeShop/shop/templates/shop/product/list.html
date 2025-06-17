@@ -1,0 +1,9 @@
+<!-- BlazeShop/shop/templates/shop/product/list.html -->
+<h1>Lista de Produtos</h1>
+{% for product in products %}
+    <div>
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <strong>{{ product.price }}</strong>
+    </div>
+{% endfor %}
